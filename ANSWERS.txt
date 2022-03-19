@@ -1,0 +1,25 @@
+// RESPONSES TO PA 9 QUSTIONS //
+
+3.
+b) The code is obtaining TE_10 and TM_10 in both the x and y directions - i.e. the x and y components
+of the fundamental mode for the transverse electric and magnetic waves through a 3-layer ridge
+waveguide. These are found using the finite difference method to obtain the eigenmodes.
+
+4.
+b) At smaller half-widths the N_eff is lower compared to the N_eff at larger half-widths. As N_eff is
+the effective refractive index of the material, it describes the relative phase delay per unit length
+in the material compared to the phase delay of a vacuum. Since we see N_eff decrease with narrower
+half-widths, then the relative phase delay cause by the material seems to decrease with narrower
+half-widths.
+
+c) By making the grid less denes- i.e. increasing dx and dy by a factor of 8 - the surface plots become
+less smooth and continuous as they were before. Additionally, the plot of N_eff is more jagged with a
+few areas where it seems as though N_eff is constant within a range of half-widths. However, from
+observations of the original meshgrid, we know that N_eff does in fact vary in those regions. Thus, it
+is important when running such simulations that we're aware of our grid size and try to use as fine a
+meshgrid as we can.
+
+5.
+b) As the index of the ridge drops, we see a drop in N_eff - which is to be expected. The effect of
+the varying N_eff can be seen in the changes to the fundamental mode with each different refractive
+index.
